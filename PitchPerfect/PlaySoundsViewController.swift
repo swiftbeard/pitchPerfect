@@ -13,11 +13,13 @@ class PlaySoundsViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
 
+    @IBOutlet weak var StopPlaying: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
             var filePathUrl = NSURL.fileURLWithPath(filePath)
             audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+            audioPlayer.enableRate = true
             
         }else{
             println("Unable to get audio file")
@@ -28,10 +30,28 @@ class PlaySoundsViewController: UIViewController {
     
     @IBAction func playSoundSlowly(sender: UIButton)
     {
+        audioPlayer.stop()
+        audioPlayer.rate = 0.5
         audioPlayer.play()
+        StopPlaying.hidden = false
         
     }
 
+    @IBAction func playSoundfast(sender: UIButton)
+    {
+        audioPlayer.stop()
+        audioPlayer.rate = 1.5
+        audioPlayer.play()
+        StopPlaying.hidden = false
+        
+    }
+    
+    @IBAction func StopPlaying(sender: UIButton)
+    {
+        audioPlayer.stop()
+        StopPlaying.hidden = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
