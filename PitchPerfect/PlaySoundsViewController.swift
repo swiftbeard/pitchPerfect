@@ -10,12 +10,26 @@ import UIKit
 import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
+    
+    var audioPlayer:AVAudioPlayer!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var filePath = NSBundle.mainBundle().pathForResource("movie_qoute", ofType: "mp3")
+        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3") {
+            var filePathUrl = NSURL.fileURLWithPath(filePath)
+            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
+            
+        }else{
+            println("Unable to get audio file")
+        }
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func playSoundSlowly(sender: UIButton)
+    {
+        audioPlayer.play()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,19 +38,6 @@ class PlaySoundsViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-    @IBAction func playSoundSlowly(sender: UIButton)
-    {
-        
-        
-    }
+   
 }

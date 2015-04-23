@@ -100,7 +100,7 @@
         <!--Play Sounds View Controller-->
         <scene sceneID="Q50-sX-DGt">
             <objects>
-                <viewController id="JrM-FH-xqb" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JrM-FH-xqb" customClass="PlaySoundsViewController" customModule="PitchPerfect" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2kI-S7-Unl"/>
                         <viewControllerLayoutGuide type="bottom" id="kYF-Uw-YrL"/>
@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLT-lf-atl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2160" y="-41"/>
+            <point key="canvasLocation" x="1920" y="-36"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z3u-N6-5HH">

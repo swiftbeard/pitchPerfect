@@ -14,7 +14,7 @@
 		2CDB63F21AE94F3C00DC36B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB63F01AE94F3C00DC36B7 /* LaunchScreen.xib */; };
 		2CDB63FE1AE94F3C00DC36B7 /* PitchPerfectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB63FD1AE94F3C00DC36B7 /* PitchPerfectTests.swift */; };
 		2CDB640A1AE982B700DC36B7 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CDB64091AE982B700DC36B7 /* PlaySoundsViewController.swift */; };
-		2CDB640C1AE9845600DC36B7 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB640B1AE9845600DC36B7 /* movie_quote.mp3 */; };
+		2CDB640E1AE987CF00DC36B7 /* movie_quote.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2CDB640D1AE987CF00DC36B7 /* movie_quote.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 		2CDB63FC1AE94F3C00DC36B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CDB63FD1AE94F3C00DC36B7 /* PitchPerfectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPerfectTests.swift; sourceTree = "<group>"; };
 		2CDB64091AE982B700DC36B7 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
-		2CDB640B1AE9845600DC36B7 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = movie_quote.mp3; sourceTree = "<group>"; };
+		2CDB640D1AE987CF00DC36B7 /* movie_quote.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = movie_quote.mp3; path = ../movie_quote.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		2CDB63E51AE94F3C00DC36B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				2CDB640B1AE9845600DC36B7 /* movie_quote.mp3 */,
+				2CDB640D1AE987CF00DC36B7 /* movie_quote.mp3 */,
 				2CDB63E61AE94F3C00DC36B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -201,7 +201,7 @@
 			files = (
 				2CDB63ED1AE94F3C00DC36B7 /* Main.storyboard in Resources */,
 				2CDB63F21AE94F3C00DC36B7 /* LaunchScreen.xib in Resources */,
-				2CDB640C1AE9845600DC36B7 /* movie_quote.mp3 in Resources */,
+				2CDB640E1AE987CF00DC36B7 /* movie_quote.mp3 in Resources */,
 				2CDB63EF1AE94F3C00DC36B7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
